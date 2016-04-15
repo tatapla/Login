@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://dev-azuretest:4480/" />
+<title>loginLKV.auth.ValidData2</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">loginLKV.auth.ValidData2</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/enter/doctor</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>24022015-1@mail.ru</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=pass</td>
+	<td>666</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=#textErrMessage &gt; p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=#textErrMessage &gt; p</td>
+	<td>Неверный e-mail или пароль. Проверьте правильность введенных данных.</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>css=div.wrapper &gt; fieldset &gt; #email</td>
+	<td>24022015-1@mail.ru</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>xpath=(//input[@id='pass'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.wrapper &gt; fieldset.submit &gt; button</td>
+	<td>Перейти в мой Личный кабинет</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.wrapper &gt; fieldset.text &gt; p &gt; a</td>
+	<td>exact:Забыли пароль?</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@id='pass'])[3]</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.wrapper &gt; fieldset.submit &gt; button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.title</td>
+	<td>Личный кабинет врача</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Мои пациенты</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Создать заказ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Мои комплексы</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=История заказов</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Программа лояльности</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Главная</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Обратная связь</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=События</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Адреса</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=e-Helixbook</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.basket &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a.icon.iconMenu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.icon.iconSettings</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td></td>
+	<td>1000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Выход</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h2</td>
+	<td>Вход для зарегистрированных пользователей</td>
+</tr>
+</tbody></table>
+</body>
+</html>

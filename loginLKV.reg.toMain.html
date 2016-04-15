@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://dev-azuretest:4480/" />
+<title>loginLKV.reg.toMain</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">loginLKV.reg.toMain</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/reglite/complete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//button[@type='button'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>id=Home-NewsAndAdditional-ResultButton</td>
+	<td>Получить результаты</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.Home-NewsAndAdditional-MainLinks-Text</td>
+	<td>Анализы и цены</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/a[2]/span</td>
+	<td>Адреса и время работы</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//a[3]/span</td>
+	<td>Вызов на дом или в офис</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//a[4]/span</td>
+	<td>База медицинских знаний</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//a[5]/span</td>
+	<td>Задать вопрос по e-mail</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a.Site-Header-Logo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.MainMenu-Point-Header</td>
+	<td>Главная</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=#MainMenu-Point2 &gt; div.MainMenu-Point-Header</td>
+	<td>Клиентам</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=#MainMenu-Point3 &gt; div.MainMenu-Point-Header</td>
+	<td>Врачам</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=#MainMenu-Point4 &gt; div.MainMenu-Point-Header</td>
+	<td>Организациям</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=#MainMenu-Point5 &gt; div.MainMenu-Point-Header</td>
+	<td>Франчайзинг</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=#MainMenu-Point6 &gt; div.MainMenu-Point-Header</td>
+	<td>О службе</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Личный кабинет врача</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Личный кабинет клиента</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

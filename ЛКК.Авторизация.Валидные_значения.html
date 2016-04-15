@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://dev-azuretest:4480/" />
+<title>login.auth.ValidData</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">login.auth.ValidData</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/enter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h2</td>
+	<td>Вход для зарегистрированных пользователей</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>24022015-1@mail.ru</td>
+	<td>email</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>3</td>
+	<td>pass</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>${email}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=pass</td>
+	<td>${pass}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.Header-Text</td>
+	<td>Личный кабинет пациента</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.Content-Caption</td>
+	<td>Предварительные заказы</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Анализы и цены</td>
+	<td>Анализы и цены</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Адреса и время работы</td>
+	<td>Адреса и время работы</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=База медицинских знаний</td>
+	<td>База медицинских знаний</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Главная страница сайта</td>
+	<td>Главная страница сайта</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.Content-Interview &gt; p</td>
+	<td>Спасибо, что выбрали Лабораторную службу Хеликс!</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=th</td>
+	<td>№ предзаказа</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//th[2]</td>
+	<td>Дата оформления</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//th[3]</td>
+	<td>Сумма</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//th[4]</td>
+	<td>Скидка</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//th[5]</td>
+	<td>Итого</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//th[6]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//th[7]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//th[8]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Повторить</td>
+	<td>Повторить</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a.icon.iconPrint</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=span.Orders-OrdersHistory-DelButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=button</td>
+	<td>Сделать предварительный заказ</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[5]/div[3]</td>
+	<td>Оформленные заказы</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[2].0.0</td>
+	<td>№ заказа</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[2].0.1</td>
+	<td>Дата оформления</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[2].0.2</td>
+	<td>Место оформления</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[2].0.3</td>
+	<td>Статус</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//button[@onclick='OrdersGetAddOrderForm(); return false;']</td>
+	<td>Загрузить результаты заказа</td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Мои заказы</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=Content-MainMenu-Point-Icon-MyOrders</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//a[2]/div[2]</td>
+	<td>Моя динамика</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//a[3]/div[2]</td>
+	<td>Мои данные</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//a[4]/div[2]</td>
+	<td>Карта клиента</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//a[5]/div[2]</td>
+	<td>Помощь</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//span[@onclick='OrdersDeleteOrderFromHistory(8413, true); ']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=img[alt=&quot;Icon&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=Выход</td>
+	<td>Выход</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Выход</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h2</td>
+	<td>Вход для зарегистрированных пользователей</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=#regBlock &gt; h2</td>
+	<td>Зарегистрировать Личный кабинет</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>${email}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=pass</td>
+	<td>555</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=#textErrMessage &gt; p</td>
+	<td>Неверный e-mail или пароль. Проверьте правильность введенных данных.</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>css=div.wrapper &gt; fieldset &gt; #email</td>
+	<td>${email}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=div.wrapper &gt; fieldset &gt; #pass</td>
+	<td>${pass}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.wrapper &gt; fieldset.submit &gt; button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.Header-Text</td>
+	<td>Личный кабинет пациента</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=img[alt=&quot;Icon&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=Выход</td>
+	<td>Выход</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Выход</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h2</td>
+	<td>Вход для зарегистрированных пользователей</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=#regBlock &gt; h2</td>
+	<td>Зарегистрировать Личный кабинет</td>
+</tr>
+</tbody></table>
+</body>
+</html>

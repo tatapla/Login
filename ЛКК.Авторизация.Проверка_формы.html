@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://dev-azuretest:4480/" />
+<title>login.auth</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">login.auth</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/enter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h2</td>
+	<td>Вход для зарегистрированных пользователей</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=pass</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=button</td>
+	<td>Перейти в мой Личный кабинет</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=exact:Забыли пароль?</td>
+	<td>exact:Забыли пароль?</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=пользовательского соглашения</td>
+	<td>пользовательского соглашения</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=label</td>
+	<td>Войти с помощью:</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=li.vk &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=li.fb &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=li.gp &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=#regBlock &gt; h2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=#regBlock &gt; h2</td>
+	<td>Зарегистрировать Личный кабинет</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>css=#regBlock &gt; fieldset.inputs &gt; #email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=#regBlock &gt; fieldset.submit &gt; button</td>
+	<td>Создать мой Личный кабинет</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=#regBlock &gt; fieldset.social.clear &gt; label</td>
+	<td>Зарегистрироваться с помощью:</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=#regForm &gt; li.vk &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=#regForm &gt; li.fb &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=#regForm &gt; li.gp &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Напишите,</td>
+	<td>Напишите,</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Повторно запросить</td>
+	<td>Повторно запросить</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=условия</td>
+	<td>условия</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h2.featuresHead</td>
+	<td>Личный кабинет позволяет</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=li.pred</td>
+	<td>Создавать предварительные заказы</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=li.reza</td>
+	<td>Загружать результаты анализов</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=li.staz</td>
+	<td>Отслеживать статус заказа</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=li.anap</td>
+	<td>Анализировать показатели по отношению к норме</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=li.dynt</td>
+	<td>Выстраивать динамику показателей по времени</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=li.vied</td>
+	<td>Просматривать заключения врача по результатам</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=li.onlc</td>
+	<td>Задавать вопросы онлайн-консультанту</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=li.prib</td>
+	<td>Распечатать результаты на официальном бланке</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=li.famp</td>
+	<td>Создать личные профили на всех членов семьи</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=li.card</td>
+	<td>Прикрепить Карту клиента и отслеживать баланс баллов</td>
+</tr>
+</tbody></table>
+</body>
+</html>
